@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		
+		<!-- Website Title & Description for Search Engine purposes -->
+		<title></title>
+		<meta name="description" content="">
+		
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<!-- Bootstrap CSS -->
+		<link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../css/bootstrap-glyphicons.css" rel="stylesheet">
+		<!--Google Font -->
+		<link href="https://fonts.googleapis.com/css?family=Encode+Sans" rel="stylesheet">
+		
+		<!-- Custom CSS -->
+		<link href="../css/styles.css" rel="stylesheet">
+		
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="../js/modernizr-2.6.2.min.js"></script>
+		
+	</head>
+	<body>
+	 
+		<div class="container">
+			<nav class="navbar navbar-fixed-top">
+				<div class="container">
+
+					<button type="button" data-toggle="collapse" class="navbar-toggle" data-target=".navbar-responsive-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+					<a class="navbar-brand nav-text">Game<strong>Network</strong></a>
+					<!-- End of Navbar Logo -->
+
+					<div class="nav-collapse collapse navbar-responsive-collapse">
+						<ul class="nav navbar-nav">	
+
+							<li><a href="../../index.html"><span class="nav-text">Home</span></a></li>
+
+						</ul> <!-- End of Navigation -->
+
+						<form class="navbar-form pull-left">
+							<input type="text" class="form-control" placeholder="Enter your search query" id="search">
+							<button class="btn btn-default "><span class="glyphicon glyphicon-search" ></span></button>
+						</form><!-- End of Navbar Search  -->					
+
+						
+						<ul class="nav navbar-nav">	
+
+							<li>
+								<ul class="nav navbar-nav">
+									<li class="dropdown">
+
+										<a href="notification.html" data-toggle="dropdown" class="dropdown-toggle "><span class="glyphicon glyphicon-globe nav-text">  Notifications</span> <span class="badge">4</span></a>
+
+										<ul class="dropdown-menu">  
+											<li> <a href="">Harsh Jadav commented on your photo.</a></li> 
+											<li class="divider"></li>
+											<li><a href="">Byro Akshay liked your photo</a></li>
+											<li class="divider"></li>
+											<li><a href="">Ishani Sharma replied to your comment.</a></li>
+											<li class="divider"></li>
+											<li><a href="">Jyo Tsna liked your comment.</a></li>  
+										</ul><!-- End of dropdown menu--> 
+
+									</li><!-- End of dropdown --> 
+								</ul><!-- End of Navbar Notifications --> 
+							</li>
+							
+							<li>
+								<ul class="nav navbar-nav">
+									<li class="dropdown">
+
+										<a href="/" data-toggle="dropdown" class="dropdown-toggle"><span class="glyphicon glyphicon-comment nav-text">  Messages</span> <span class="badge">2</strong></a>
+
+										<ul class="dropdown-menu">  
+											<li> <a href=""><span class="glyphicon glyphicon-user"> </span>Sandeep Kupilli</a></li>  
+											<li class="dropdown-header"><a href="">Where are you?</a></li>
+											<li class="divider"></li>
+											<li> <a href=""><span class="glyphicon glyphicon-user"> </span>Sushmitha Naik</a></li>  
+											<li class="dropdown-header"><a href="">Call me.</a></li>  
+										</ul><!-- End of dropdown menu--> 
+
+									</li><!-- End of dropdown --> 
+								</ul><!-- End of Navbar Messages--> 
+							</li>
+
+						</ul> <!-- End of Navigation -->
+
+						<ul class="nav navbar-nav pull-right">
+							<li class="dropdown" onclick="changeColor(this.innerHTML);">
+
+								<a href="/" data-toggle="dropdown" class="dropdown-toggle"><span class="glyphicon glyphicon-user nav-text"> My Account<strong class="caret"></strong></span></a>
+
+								<ul class="dropdown-menu"> 
+
+									<li> <a href=""><span class="glyphicon glyphicon-wrench"></span>  Settings</a>
+									</li> 
+
+									<li>
+										<a href=""><span class="glyphicon glyphicon-refresh"></span>  Update Profile</a>
+									</li>
+
+									<li>
+										<a href=""><span class="glyphicon glyphicon-briefcase"></span>  Billing</a>
+									</li>
+
+									<li class="divider"></li>
+
+									<li class="dropdown-header"	>
+										<a href=""><span class="glyphicon glyphicon-off"></span>  Sign Out</a>
+									</li> 
+								</ul><!-- End of dropdown menu--> 
+							</li><!-- End of dropdown --> 
+						</ul><!-- End of Navbar My Account -->
+					</div><!-- End of Collapsible Navbar -->
+				</div>	<!-- End of Navbar container -->
+			</nav><!-- End of Navbar -->
+			
+			<section class="row content">
+				<aside class="col-sm-2">  
+					<ul class="list-group">
+						<li class="list-group-item"><span class="glyphicon glyphicon-user"> </span> <a href="profile.html">My Profile</a></li>
+						<li class="list-group-item"><span class="glyphicon glyphicon-tasks">  <a href="../../index.html">News Feed</a></span></li>
+					  <li class="list-group-item">
+					    <span class="badge">4</span><a href="notification.html">
+					    <span class="glyphicon glyphicon-globe"> Notifications</span></a>
+					  </li>
+					  <li class="list-group-item">
+					    <span class="badge">2</span><a href="messages.html">
+					    <span class="glyphicon glyphicon-comment"> Messages</span></a>
+					  </li> 
+					  <button type="button" class="btn btn-primary btn-block" data-toggle="collapse" data-target="#collapsibleID">Your Content</button>
+					  <ul id="collapsibleID" class="collapse list-group">
+					  	<li class="list-group-item">My Games</li>  
+							<li class="list-group-item">Screenshots</li>
+							<li class="list-group-item">Videos</li>
+							<li class="list-group-item"><span class="glyphicon glyphicon-stats"></span>Statistics</li>
+					  </ul> 
+					</ul>  <!--end of list group --> 
+				</aside>
+				<content class="col-sm-4">
+					<ul class="list-group">
+					  <li class="list-group-item"><a href="#Sushmitha" data-toggle="collapse">Sushmitha Naik</a></li>
+
+					  <li class="list-group-item"><a href="#Sandeep" data-toggle="collapse">Sandeep Kupilli</a></li>
+
+					  <li class="list-group-item"><a href="#Byroju" data-toggle="collapse">Byroju Akshay</a></li>
+
+					  <li class="list-group-item"><a href="#Shivan" data-toggle="collapse">Shivan Reddy</a></li>
+
+					  <li class="list-group-item"><a href="#Harsh" data-toggle="collapse">Harsh Jadav</a></li>
+					</ul>
+				</content>
+				<content class="col-sm-6">
+					<ul class="list-group">
+						<div id="Sushmitha" class="collapse fade">
+						  <li class="list-group-item right">Cras justo odio</li>
+						  <li class="list-group-item">Dapibus ac facilisis in</li>
+						  <li class="list-group-item">Morbi leo risus</li>
+						  <li class="list-group-item">Porta ac consectetur ac</li>
+						  <li class="list-group-item">Vestibulum at eros</li>
+						  <li class="list-group-item">Cras justo odio</li>
+						  <li class="list-group-item">Dapibus ac facilisis in</li>
+						  <li class="list-group-item">Morbi leo risus</li>
+						  <li class="list-group-item">Porta ac consectetur ac</li>
+						  <li class="list-group-item">Vestibulum at eros</li>
+					  </div>
+
+						<div id="Sandeep" class="collapse fade">
+						  <li class="list-group-item right">Cras justo odio</li>
+						  <li class="list-group-item">Dapibus ac facilisis in</li>
+						  <li class="list-group-item">Morbi leo risus</li>
+						  <li class="list-group-item">Porta ac consectetur ac</li>
+						  <li class="list-group-item">Vestibulum at eros</li>
+						  <li class="list-group-item">Cras justo odio</li>
+						  <li class="list-group-item">Dapibus ac facilisis in</li>
+						  <li class="list-group-item">Morbi leo risus</li>
+						  <li class="list-group-item">Porta ac consectetur ac</li>
+						  <li class="list-group-item">Vestibulum at eros</li>
+					  </div>
+
+						<div id="Byroju" class="collapse fade">
+						  <li class="list-group-item right">Cras justo odio</li>
+						  <li class="list-group-item">Dapibus ac facilisis in</li>
+						  <li class="list-group-item">Morbi leo risus</li>
+						  <li class="list-group-item">Porta ac consectetur ac</li>
+						  <li class="list-group-item">Vestibulum at eros</li>
+						  <li class="list-group-item">Cras justo odio</li>
+						  <li class="list-group-item">Dapibus ac facilisis in</li>
+						  <li class="list-group-item">Morbi leo risus</li>
+						  <li class="list-group-item">Porta ac consectetur ac</li>
+						  <li class="list-group-item">Vestibulum at eros</li>
+					  </div>
+
+
+						<div id="Shivan" class="collapse fade">
+						  <li class="list-group-item right">Cras justo odio</li>
+						  <li class="list-group-item">Dapibus ac facilisis in</li>
+						  <li class="list-group-item">Morbi leo risus</li>
+						  <li class="list-group-item">Porta ac consectetur ac</li>
+						  <li class="list-group-item">Vestibulum at eros</li>
+						  <li class="list-group-item">Cras justo odio</li>
+						  <li class="list-group-item">Dapibus ac facilisis in</li>
+						  <li class="list-group-item">Morbi leo risus</li>
+						  <li class="list-group-item">Porta ac consectetur ac</li>
+						  <li class="list-group-item">Vestibulum at eros</li>
+					  </div>
+
+
+						<div id="Harsh" class="collapse fade">
+						  <li class="list-group-item right">Cras justo odio</li>
+						  <li class="list-group-item">Dapibus ac facilisis in</li>
+						  <li class="list-group-item">Morbi leo risus</li>
+						  <li class="list-group-item">Porta ac consectetur ac</li>
+						  <li class="list-group-item">Vestibulum at eros</li>
+						  <li class="list-group-item">Cras justo odio</li>
+						  <li class="list-group-item">Dapibus ac facilisis in</li>
+						  <li class="list-group-item">Morbi leo risus</li>
+						  <li class="list-group-item">Porta ac consectetur ac</li>
+						  <li class="list-group-item">Vestibulum at eros</li>
+					  </div>
+
+					</ul>
+				</content>
+			</section>
+ 
+		</div>
+		<!-- End of container -->
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 text-center">
+					<h4>Copyright © 2017 GameNetwork. </h4>
+					<h4>All rights reserved. </h4>
+				</div>
+
+				<div class="col-sm-4">
+					<h4>About Us</h4>
+					<p>GameNetwork is a games based community and store.</p>
+				</div>
+
+				<div class="col-sm-2"> 
+					<ul class="list-unstyled">
+						<li><a href="../../index.html">Home</a></li> 
+						<li><a href="profile.html">My Profile</a></li>
+						<li><a href="notification.html">Notifications</a></li>
+						<li><a href="messages.html">Messages</a></li> 
+					</ul>
+				</div> 
+					<ul class="list-unstyled footer-list"> 
+						<li><a href="">My Games</a></li>
+						<li><a href="">Screenshots</a></li>  
+						<li><a href="">Videos</a></li>  
+						<li><a href="">Statistics</a></li> 
+					</ul>
+
+				<div class="col-sm-2">
+			</div><!--End of row -->
+		</div><!--End of container -->
+	</footer>
+
+	<!-- First try for the online version of jQuery-->
+	<script src="http://code.jquery.com/jquery.js"></script>
+	
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>window.jQuery || document.write('<script src="../js/jquery-1.8.2.min.js"><\/script>')</script>
+	
+	<!-- Bootstrap JS -->
+	<script src="../../bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- Custom JS -->
+	<script src="../js/script.js"></script>
+	
+	</body>
+</html>
+

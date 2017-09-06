@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		
+		<!-- Website Title & Description for Search Engine purposes -->
+		<title></title>
+		<meta name="description" content="">
+		
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+		<!--Google Font -->
+		<link href="https://fonts.googleapis.com/css?family=Encode+Sans" rel="stylesheet">
+		
+		<!-- Custom CSS -->
+		<link href="includes/css/styles.css" rel="stylesheet">
+		
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+		
+	</head>
+	<body>
+	 
+		<div class="container ">
+			<nav class="navbar navbar-fixed-top">
+				<div class="container">
+
+					<button type="button" data-toggle="collapse" class="navbar-toggle" data-target=".navbar-responsive-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+					<a class="navbar-brand nav-text">Game<strong>Network</strong></a>
+					<!-- End of Navbar Logo -->
+
+					<div class="nav-collapse collapse navbar-responsive-collapse">
+						<ul class="nav navbar-nav">	
+
+							<li class="active"><a href="index.html">Home</a></li>
+
+						</ul> <!-- End of Navigation -->
+
+						<form class="navbar-form pull-left">
+							<input type="text" class="form-control" placeholder="Enter your search query" id="search">
+							<button class="btn "><span class="glyphicon glyphicon-search" ></span></button>
+						</form><!-- End of Navbar Search  -->					
+
+						
+						<ul class="nav navbar-nav">	
+
+							<li>
+								<ul class="nav navbar-nav">
+									<li class="dropdown">
+
+										<a href="/" data-toggle="dropdown" class="dropdown-toggle notify"><span class="glyphicon glyphicon-globe nav-text">  Notifications</span> <span class="badge">4</span></a>
+
+										<ul class="dropdown-menu">  
+											<li> <a href="">Harsh Jadav commented on your photo.</a></li> 
+											<li class="divider"></li>
+											<li><a href="">Byro Akshay liked your photo</a></li>
+											<li class="divider"></li>
+											<li><a href="">Ishani Sharma replied to your comment.</a></li>
+											<li class="divider"></li>
+											<li><a href="">Jyo Tsna liked your comment.</a></li>  
+										</ul><!-- End of dropdown menu--> 
+
+									</li><!-- End of dropdown --> 
+								</ul><!-- End of Navbar Notifications --> 
+							</li>
+							
+							<li>
+								<ul class="nav navbar-nav">
+									<li class="dropdown">
+
+										<a href="/" data-toggle="dropdown" class="dropdown-toggle"><span class="glyphicon glyphicon-comment nav-text">  Messages</span> <span class="badge">2</strong></a>
+
+										<ul class="dropdown-menu">  
+											<li> <a href=""><span class="glyphicon glyphicon-user"> </span>Sandeep Kupilli</a></li>  
+											<li class="dropdown-header"><a href="">Where are you?</a></li>
+											<li class="divider"></li>
+											<li> <a href=""><span class="glyphicon glyphicon-user"> </span>Sushmitha Naik</a></li>  
+											<li class="dropdown-header"><a href="">Call me.</a></li>  
+										</ul><!-- End of dropdown menu--> 
+
+									</li><!-- End of dropdown --> 
+								</ul><!-- End of Navbar Messages--> 
+							</li>
+
+						</ul> <!-- End of Navigation -->
+
+						<ul class="nav navbar-nav pull-right">
+							<li class="dropdown">
+
+								<a href="/" data-toggle="dropdown" class="dropdown-toggle account"><span class="glyphicon glyphicon-user nav-text account">My Account<strong class="caret"></strong></span></a>
+
+								<ul class="dropdown-menu"> 
+
+									<li> <a href=""><span class="glyphicon glyphicon-wrench"></span>  Settings</a>
+									</li> 
+
+									<li>
+										<a href=""><span class="glyphicon glyphicon-refresh"></span>  Update Profile</a>
+									</li>
+
+									<li>
+										<a href=""><span class="glyphicon glyphicon-briefcase"></span>  Billing</a>
+									</li>
+
+									<li class="divider"></li>
+
+									<li class="dropdown-header"	>
+										<a href=""><span class="glyphicon glyphicon-off"></span>  Sign Out</a>
+									</li> 
+								</ul><!-- End of dropdown menu--> 
+							</li><!-- End of dropdown --> 
+						</ul><!-- End of Navbar My Account -->
+					</div><!-- End of Collapsible Navbar -->
+				</div>	<!-- End of Navbar container -->
+			</nav><!-- End of Navbar -->
+			
+			<section class="row content">
+				<aside class="col-sm-2">  
+					<ul class="list-group">
+						<li class="list-group-item"><span class="glyphicon glyphicon-user"> </span> <a href="includes/html/profile.html">My Profile</a></li>
+						<li class="list-group-item"><span class="glyphicon glyphicon-tasks">  <a href="index.html">News Feed</a></span></li>
+					  <li class="list-group-item">
+					    <span class="badge">4</span><a href="includes/html/notification.html">
+					    <span class="glyphicon glyphicon-globe"> Notifications</span></a>
+					  </li>
+					  <li class="list-group-item">
+					    <span class="badge">2</span><a href="includes/html/messages.html">
+					    <span class="glyphicon glyphicon-comment"> Messages</span></a>
+					  </li> 
+					  <button type="button" class="btn btn-primary btn-block" data-toggle="collapse" data-target="#collapsibleID">Your Content</button>
+					  <ul id="collapsibleID" class="collapse list-group">
+					  	<li class="list-group-item">My Games</li>  
+							<li class="list-group-item">Screenshots</li>
+							<li class="list-group-item">Videos</li>
+							<li class="list-group-item"><span class="glyphicon glyphicon-stats"></span>Statistics</li>
+					  </ul> 
+					</ul>   
+				</aside>
+				<content class="col-sm-10">
+
+					<!-- Carousel -->
+					<div class="carousel slide" id="myCarousel">
+						
+						<!-- Indicators --> 
+						<ol class="carousel-indicators">
+							<li status="active" data-slide-to="0" data-target="#myCarousel"></li>
+							<li data-slide-to="1" data-target="#myCarousel"></li>
+							<li data-slide-to="2" data-target="#myCarousel"></li>
+						</ol> 
+						<!--End of indicators -->
+						
+					<!--Carousel Inner -->	
+					<div class="carousel-inner">
+						<div class="item active" id="slide1">  
+						</div><!-- end item -->
+						
+						<div class="item" id="slide2"> 
+						</div><!-- end item -->
+						
+						<div class="item" id="slide3"> 
+						</div><!-- end item -->
+					</div><!-- carousel-inner -->
+
+					<!-- Controls -->
+					<a class="left carousel-control" href="#myCarousel" data-slide="prev" ><span class="icon-prev"></span></a>
+					<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
+
+					<!-- End of controls -->
+
+					</div>
+					<!--End of Carousel -->
+				
+					<div class="tabbable">
+						<ul class="nav nav-tabs nav-justified">
+						  <li role="presentation" class="active"><a  data-toggle="tab" href="#featured">Featured</a></li> 
+						  <li role="presentation" ><a  data-toggle="tab" href="#recent">Recent</a></li> 
+						</ul>
+						<div class="tab-content">
+
+							<div class="tab-pane active" id="featured"> 
+								<article class="row">    
+										<div class="col-sm-3"><img src="https://static.gamespot.com/uploads/screen_petite/1179/11799911/3282372-screen+shot+2017-09-04+at+9.19.17+am.png" alt=""></div>
+										<div class="col-sm-9">
+											<h3>How Xbox One Will Work With Keyboard And Mouse</h3> <p>Microsoft understands people have concerns about fairness.</p> <br>
+											<ol class="breadcrumb">
+											1 day, 11 hours ago
+											</ol>
+										</div> 
+								</article> 
+								<article class="row">    
+										<div class="col-sm-3"><img src="https://static.gamespot.com/uploads/screen_petite/1576/15769789/3248385-callofduty_wwii_screen2.jpg" alt=""></div>
+										<div class="col-sm-9">
+											<h3>Call Of Duty Publisher Teases More Historical Games</h3> <p>Could we get more WWII games? It sounds like it's definitely possible.</p> <br>
+											<ol class="breadcrumb">
+											12 hours, 37 minutes ago
+											</ol>
+										</div> 
+								</article>
+								<article class="row last-art">    
+										<div class="col-sm-3"><img src="https://static.gamespot.com/uploads/screen_petite/43/434805/3282425-2034254541-50041.jpg" alt=""></div>
+										<div class="col-sm-9">
+											<h3>Rick And Morty Season 3 Funko Pop Giveaway</h3> 
+											<p>Enter for a chance to win a Birdperson Funko Pop</p> <br>
+											<ol class="breadcrumb">
+											30 minutes, 27 seconds ago
+											</ol>
+										</div> 
+								</article>
+								<div class="text-center"><button class="btn btn-primary">Load More!</button></div>
+							</div><!--End of tab pane 1--> 
+							<div class="tab-pane" id = "recent">
+								<article class="row">    
+										<div class="col-sm-3"><img src="https://static.gamespot.com/uploads/screen_petite/123/1239113/3280829-8461468328-29165.jpg" alt=""></div>
+										<div class="col-sm-9">
+											<h3>Leonardo DiCaprio Could Play Joker In Origin Movie</h3> 
+											<p>Report claims Warner Bros. is looking at DiCaprio to play Batman villain, Joker, in a new movie.</p> <br>
+											<ol class="breadcrumb">1 day, 8 hours ago
+											</ol>
+										</div> 
+								</article> 
+								<article class="row">    
+										<div class="col-sm-3"><img src="https://static.gamespot.com/uploads/screen_petite/1576/15769789/3248368-jb_arcstrider_action_08.png" alt=""></div>
+										<div class="col-sm-9">
+											<h3>Destiny 2 Release Date, Unlock Time, And Raid Debut Confirmed</h3> <p>If you're wondering when Destiny 2 comes out, Bungie has detailed when you'll be able to play on PS4 and Xbox One, as well as when you can check out ...</p> 
+											<ol class="breadcrumb">
+											12 hours, 37 minutes ago
+											</ol>
+										</div> 
+								</article>
+								<article class="row last-art">    
+										<div class="col-sm-3"><img src="https://static.gamespot.com/uploads/screen_petite/1576/15761254/3282812-20170901_rickmorty_birdman.jpg" alt=""></div>
+										<div class="col-sm-9">
+											<h3>Rick And Morty Season 3 Funko Pop Giveaway</h3> 
+											<p>Enter for a chance to win a Birdperson Funko Pop</p> <br>
+											<ol class="breadcrumb">
+											30 minutes, 27 seconds ago
+											</ol>
+										</div> 
+								</article>
+								<div class="text-center"><button class="btn btn-primary">Load More!</button></div>
+							</div><!--End of tab pane 2--> 
+								
+						</div><!--End of content -->
+					</div>	<!--End of tabbable -->
+					
+						<hr>	
+					<h2 class="text-center">Friends' Feed</h4>
+
+					<div class="media ">
+				    <div class="media-left">
+				        <a href="#">
+				            <img src="images/person-flat.png" class="img-circle media-object pull-left" alt="Sample Image" width="50px" height="50px">
+				        </a>
+				    </div><!--End of image -->
+
+				    <div class="media-body">
+				        <h4 class="media-heading">Jon Doe <small><i>Posted on January 10, 2014</i></small></h4>
+				        <p>Excellent feature! I love it. One day I'm definitely going to put this Bootstrap component into use and I'll let you know once I do.</p>
+
+				        <div class="media quote">
+							    <div class="media-left">
+							        <a href="#">
+							            <img src="images/person-girl-flat.png" class="img-circle media-object pull-left avatar" alt="Sample Image">
+							        </a>
+							    </div><!--End of image -->
+							    <div class="media-body">
+							        <h4 class="media-heading">Jane Doe <small><i>Posted on January 10, 2014</i></small></h4>
+							        <p>Excellent feature! I love it. One day I'm definitely going to put this Bootstrap component into use and I'll let you know once I do.</p> 
+							        <img src="images/gow_small.jpg" alt="" class="img-quote">
+							    </div><!--End of body --> 
+								</div><!--End of media -->
+
+				    </div><!--End of body -->
+					</div><!--End of media -->
+					<div class="media ">
+				    <div class="media-left">
+				        <a href="#">
+				            <img src="images/person-flat.png" class="img-circle media-object pull-left" alt="Sample Image" width="50px" height="50px">
+				        </a>
+				    </div><!--End of image -->
+				    <div class="media-body">
+				        <h4 class="media-heading">Jon Doe <small><i>Posted on January 10, 2014</i></small></h4>
+				        <p>Excellent feature! I love it. One day I'm definitely going to put this Bootstrap component into use and I'll let you know once I do.</p>
+
+				        <img src="images/nfs_small.jpg" alt="">
+				    </div><!--End of body --> 
+					</div><!--End of media -->
+					<hr> 
+					<div class="media ">
+				    <div class="media-left">
+				        <a href="#">
+				            <img src="images/person-girl-flat.png" class="img-circle media-object pull-left" alt="Sample Image" width="50px" height="50px">
+				        </a>
+				    </div><!--End of image -->
+				    <div class="media-body">
+				        <h4 class="media-heading">Jon Doe <small><i>Posted on January 10, 2014</i></small></h4>
+				        <p>Excellent feature! I love it. One day I'm definitely going to put this Bootstrap component into use and I'll let you know once I do.</p>
+
+				        <img src="images/cod_small.jpg" alt="">
+				    </div><!--End of body --> 
+					</div><!--End of media -->
+					<hr> 
+				</content>
+			</section>
+ 
+		</div>
+		<!-- End of container -->
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 text-center">
+					<h4>Copyright © 2017 GameNetwork. </h4>
+					<h4>All rights reserved. </h4>
+				</div>
+
+				<div class="col-sm-4">
+					<h4>About Us</h4>
+					<p>GameNetwork is a games based community and store.</p>
+				</div>
+
+				<div class="col-sm-2"> 
+					<ul class="list-unstyled">
+						<li><a href="index.html">Home</a></li> 
+						<li><a href="includes/html/profile.html">My Profile</a></li>
+						<li><a href="includes/html/notification.html">Notifications</a></li>
+						<li><a href="includes/html/messages.html">Messages</a></li> 
+					</ul>
+				</div> 
+					<ul class="list-unstyled footer-list"> 
+						<li><a href="">My Games</a></li>
+						<li><a href="">Screenshots</a></li>  
+						<li><a href="">Videos</a></li>  
+						<li><a href="">Statistics</a></li> 
+					</ul>
+
+				<div class="col-sm-2">
+			</div><!--End of row -->
+		</div><!--End of container -->
+	</footer>
+
+	<!-- First try for the online version of jQuery-->
+	<script src="http://code.jquery.com/jquery.js"></script>
+	
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+	
+	<!-- Bootstrap JS -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- Custom JS -->
+	<script src="includes/js/script.js"></script>
+	
+	</body>
+</html>
+

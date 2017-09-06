@@ -1,0 +1,524 @@
+/*
+
+My Custom CSS
+=============
+
+Author:  Brad Hussey
+Updated: August 2013
+Notes:	 Hand coded for Udemy.com
+
+*/
+
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+ 
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+
+body{
+   -webkit-font-smoothing: antialiased;
+   text-rendering: optimizeLegibility;
+   font-family: 'Encode Sans', serif;
+   font-size: 16px;
+} 
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+
+   font-family: 'Encode Sans', serif;
+}
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+   .carousel-caption{
+      font-size: 20px;
+   }
+
+   .carousel{
+      margin-bottom: 20px;
+   }
+
+   .carousel-caption h4{
+      font-size: 24px;
+      color:  #e3e3e3;
+   }
+
+   #myCarousel .item{
+      height: 520px;
+   } 
+   #slide1{
+      background: url('../../images/arkham_medium.jpg') top center no-repeat;
+   }
+
+   #slide2{
+      background: url('../../images/skyrim_medium.jpg') top center no-repeat;
+   }
+   .item img{
+      max-height: 768;
+      max-width:1366;
+      height: auto;
+      width: auto;
+
+   }
+
+   #slide3{
+      background: url('../../images/injustice_medium.jpg') top center no-repeat;
+   }
+   
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+   #search{
+      width: 440px;
+      margin-left: 20px; 
+      background-color: #f3f3f3;
+      border: 1px  #b8b6b4;
+      color: #0a0a0a; 
+   }
+   
+   .navbar{
+      background-color: #0d245a;  
+   }
+
+   .nav-text{
+      color: #b8b6b4;
+   } 
+   .nav a:hover{
+      color: white;
+   }
+
+/* --------------------------------------
+   Aside
+   -------------------------------------- */
+   
+   aside a, nav a{ 
+      color: #333; 
+   }
+      
+   aside h3{
+      text-align: center;
+   }
+   aside a:hover{  
+      text-decoration: none;
+      color: #333;
+   } 
+   .tab-pane .btn-primary,aside .btn-primary,aside .btn-primary:hover{
+      background-color: #0d245a; 
+   }
+ 
+   .tab-pane .btn-primary{
+      border: none;
+      width: 150px;
+      padding: 10px 20px;
+   }
+   .tab-pane .btn-primary:active,.tab-pane .btn-primary:focus, aside .btn-primary:active,aside .btn-primary:focus{
+      background-color: #1b419a; 
+   }
+ 
+   #aside-profile{ 
+      padding-right: 80px;
+   }
+   #collapsibleID{
+      text-align: center;
+      margin-top: 10px;
+   }
+   
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+ 
+   
+
+   .label-default{
+      padding: 10px;
+      font-size: 10px;
+   }
+
+
+/* --------------------------------------
+   Main Content
+   -------------------------------------- */
+
+
+   .breadcrumb{
+      font-size:10px;
+      margin: 0px;
+   }
+    
+   .well img{
+      width: 95%;
+   }
+    
+
+
+   .profile{
+      text-align: center; 
+
+   }
+   .profile-container{
+      background-color: #fafafa; 
+   }
+
+   .profile-block{
+      background: white;
+      border: 1px solid rgba(9,0,0,0.25); 
+      padding:  5px;
+   }
+
+   article{
+      margin-top: 20px;
+      border-bottom: 2px solid #e3e3e3;
+   }
+   .tab-pane:last-child{
+      margin-top: 0px; 
+      border-bottom: none;
+   }
+   article img{
+      margin-bottom: 20px; 
+      margin-left: 10px; 
+   }
+   .last-art{ 
+      border-bottom: none;
+   }
+   article h3,content h3{
+      margin-top: 0px
+   }
+
+   .media-object{
+      margin-right: 15px;
+   }
+
+   .img-quote{
+      width: auto;
+      height: 450px;
+   }
+   .card .img-quote{
+      width: auto;
+      height: 325px;
+   }
+   .card .media{
+      padding :10px;
+      text-align: left;
+   }
+   .avatar{
+      width:50px;
+      height:50px;
+   }
+
+   .quote{
+      background-color: #fafafa;
+      padding: 5px;
+   } 
+ 
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+
+   .alert {
+      margin-top: 20px;
+      display: none;
+   } 
+
+   .content{
+      margin-top: 80px;
+   }
+   footer{
+      background-color:#232323;
+      color: white;
+      font-size: 12px;
+      padding: 20px 0px;
+   }
+ 
+   .btn{
+         text-decoration: none;
+      }
+
+   footer a:hover{
+
+      text-decoration: none;
+   }
+
+/*Including Card functionality */
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  margin-bottom: 10px;
+} 
+
+.card-body {
+  -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+  padding: 1.25rem;
+}
+
+.card-title {
+  margin-bottom: 0.75rem;
+}
+
+.card-subtitle {
+  margin-top: -0.375rem;
+  margin-bottom: 0;
+}
+
+.card-text:last-child {
+  margin-bottom: 0;
+}
+
+.card-text{
+   text-align: left;
+}
+.card-link:hover {
+  text-decoration: none;
+}
+
+.card-link + .card-link {
+  margin-left: 1.25rem;
+}
+
+.card > .list-group:first-child .list-group-item:first-child {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.card > .list-group:last-child .list-group-item:last-child {
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.card-header {
+  padding: 0.75rem 1.25rem;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card-header:first-child {
+  border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+}
+
+.card-footer {
+  padding: 0.75rem 1.25rem;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card-footer:last-child {
+  border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
+}
+
+.card-header-tabs {
+  margin-right: -0.625rem;
+  margin-bottom: -0.75rem;
+  margin-left: -0.625rem;
+  border-bottom: 0;
+}
+.card-block{
+   padding: 5px 5px 5px 18px;
+}
+.card-header-pills {
+  margin-right: -0.625rem;
+  margin-left: -0.625rem;
+}
+
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1.25rem;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: calc(0.25rem - 1px);
+}
+
+.card-img-top {
+  width: 100%;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.card-img-bottom {
+  width: 100%;
+  border-bottom-right-radius: calc(0.25rem - 1px);
+  border-bottom-left-radius: calc(0.25rem - 1px);
+}
+
+@media (min-width: 576px) {
+  .card-deck {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .card-deck .card {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1 0 0%;
+        flex: 1 0 0%;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: 576px) {
+  .card-group {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+  }
+  .card-group .card {
+    -ms-flex: 1 0 0%;
+        flex: 1 0 0%;
+  }
+  .card-group .card + .card {
+    margin-left: 0;
+    border-left: 0;
+  }
+  .card-group .card:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .card-group .card:first-child .card-img-top {
+    border-top-right-radius: 0;
+  }
+  .card-group .card:first-child .card-img-bottom {
+    border-bottom-right-radius: 0;
+  }
+  .card-group .card:last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .card-group .card:last-child .card-img-top {
+    border-top-left-radius: 0;
+  }
+  .card-group .card:last-child .card-img-bottom {
+    border-bottom-left-radius: 0;
+  }
+  .card-group .card:not(:first-child):not(:last-child) {
+    border-radius: 0;
+  }
+  .card-group .card:not(:first-child):not(:last-child) .card-img-top,
+  .card-group .card:not(:first-child):not(:last-child) .card-img-bottom {
+    border-radius: 0;
+  }
+}
+
+.card-columns .card {
+  margin-bottom: 0.75rem;
+}
+
+@media (min-width: 576px) {
+  .card-columns {
+    -webkit-column-count: 3;
+            column-count: 3;
+    -webkit-column-gap: 1.25rem;
+            column-gap: 1.25rem;
+  }
+  .card-columns .card {
+    display: inline-block;
+    width: 100%;
+  }
+}
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+/* Portrait & landscape phone */
+@media only screen and (max-width: 360px) { 
+
+   #search{
+      max-width: 285px;
+   }
+}
+
+@media only screen and (max-width: 480px) { 
+
+   #search{
+      width:90%;
+      max-width: 370px;
+   }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {  
+   .carousel-caption{font-size: 15px;   }
+
+   .nav{
+      text-align: center; 
+      margin-top: 30px; 
+   }
+   .dropdown{
+      height: 20px;
+   }
+   #search{
+      width: 360px;
+      margin: 0px;
+   }
+   footer{
+      text-align: center;
+   }
+   .navbar-form{
+      display: block;
+   }
+   .account{
+      margin: -30px;
+   } 
+   #myCarousel .item{
+   height: 310px;
+   } 
+
+   #slide1{
+      background: url('../../images/skyrim_small.jpg') top center no-repeat;
+   }
+
+   #slide2{
+      background: url('../../images/arkham_small.jpg') top center no-repeat;
+   }
+
+
+   #slide3{
+      background: url('../../images/injustice_small.jpg') top center no-repeat;
+   }
+   
+}
+
+/* Large desktop */
+@media (min-width: 1200px) { 
+
+ 
+   #myCarousel .item{
+   height: 500px;
+   } 
+   #slide1{
+      background: url('../../images/skyrim_large.jpg') top center no-repeat;
+   }
+
+   #slide2{
+      background: url('../../images/arkham_large.jpg') top center no-repeat;
+   }
+
+
+   #slide3{
+      background: url('../../images/injustice_large.jpg') top center no-repeat;
+   }
+   
+}
