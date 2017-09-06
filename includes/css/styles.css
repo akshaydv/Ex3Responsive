@@ -13,12 +13,10 @@ Notes:	 Hand coded for Udemy.com
 /* --------------------------------------
    Layout
    -------------------------------------- */
- 
-
+  
 /* --------------------------------------
    Typography
-   -------------------------------------- */
-
+   -------------------------------------- */ 
 body{
    -webkit-font-smoothing: antialiased;
    text-rendering: optimizeLegibility;
@@ -141,6 +139,42 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 /* --------------------------------------
    Main Content
    -------------------------------------- */
+.img-slide {
+    -webkit-animation: fadein 2.5s; /* Safari and Chrome */
+    -moz-animation: fadein 2.5s; /* Firefox */
+    -ms-animation: fadein 2.5s; /* Internet Explorer */
+    -o-animation: fadein 2.5s; /* Opera */
+    animation: fadein 2.5s;  
+}
+    
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
+
+/* Opera */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
 
 
    .breadcrumb{
@@ -148,11 +182,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
       margin: 0px;
    }
     
-   .well img{
+   .well img,{
       width: 95%;
-   }
-    
-
+   } 
 
    .profile{
       text-align: center; 
@@ -195,6 +227,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
       width: auto;
       height: 450px;
    }
+
+   .media-image{
+      width: auto;
+      height: 500px;
+
+   }
    .card .img-quote{
       width: auto;
       height: 325px;
@@ -215,8 +253,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
  
 /* --------------------------------------
    Global Styles
-   -------------------------------------- */
-
+   -------------------------------------- */ 
    .alert {
       margin-top: 20px;
       display: none;
@@ -225,11 +262,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
    .content{
       margin-top: 80px;
    }
-   footer{
+   footer, footer .container{
       background-color:#232323;
       color: white;
       font-size: 12px;
-      padding: 20px 0px;
+      padding: 20px 0px;   
    }
  
    .btn{
@@ -447,21 +484,41 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
    #search{
       max-width: 285px;
+      visibility: hidden;
+      display: none;
+   }
+   .img-quote{
+      width: auto;
+      height: 250px;
+   }
+
+   .media-image{
+      width: auto;
+      height: 280px;
+
    }
 }
 
 @media only screen and (max-width: 480px) { 
+   .img-quote{
+      width: auto;
+      height: 150px;
+   }
 
-   #search{
-      width:90%;
-      max-width: 370px;
+   .media-image{
+      width: auto;
+      height: 180px;
+
+   }
+   #search{  
+      visibility: hidden;
+      display: none;
    }
 }
-
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {  
    .carousel-caption{font-size: 15px;   }
-
+   
    .nav{
       text-align: center; 
       margin-top: 30px; 
@@ -472,6 +529,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
    #search{
       width: 360px;
       margin: 0px;
+      visibility: hidden;
+      display: none;
    }
    footer{
       text-align: center;
@@ -500,7 +559,15 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
    }
    
 }
+/* Large desktop */
+@media (max-width: 1200px) { 
 
+ 
+   #search{ 
+      visibility: hidden;
+      display: none;
+   }
+}
 /* Large desktop */
 @media (min-width: 1200px) { 
 
