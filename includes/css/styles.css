@@ -151,7 +151,7 @@ Notes:	 Hand coded for Udemy.com
 
    }
    .profile-container{
-      background-color: #fafafa; 
+      background-color: #ececec; 
    }
 
    .profile-block{
@@ -443,9 +443,7 @@ Notes:	 Hand coded for Udemy.com
 @media only screen and (max-width: 360px) { 
 
    #search{
-      max-width: 285px;
-      visibility: hidden;
-      display: none;
+      width: 200px; 
    }
    .img-quote{
       width: auto;
@@ -471,10 +469,10 @@ Notes:	 Hand coded for Udemy.com
 
    }
    #search{  
-      visibility: hidden;
-      display: none;
+    max-width: 335px; 
    }
 }
+
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {  
    .carousel-caption{font-size: 15px;   }
@@ -487,10 +485,8 @@ Notes:	 Hand coded for Udemy.com
       height: 20px;
    }
    #search{
-      width: 360px;
-      margin: 0px;
-      visibility: hidden;
-      display: none;
+      width: 480px;
+      margin: 0px; 
    }
    footer{
       text-align: center;
@@ -518,16 +514,7 @@ Notes:	 Hand coded for Udemy.com
       background: url('../../images/injustice_small.jpg') top center no-repeat;
    }
    
-}
-/* Large desktop */
-@media (max-width: 1200px) { 
-
- 
-   #search{ 
-      visibility: hidden;
-      display: none;
-   }
-}
+} 
 /* Large desktop */
 @media (min-width: 1200px) { 
 
